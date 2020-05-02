@@ -1,0 +1,21 @@
+{
+    "routes" : [
+        {
+            "route" : "/authenticated",
+	        "serve" : "/index.html",
+            "allowedRoles" : ["authenticated"],
+            "statusCode" : 200
+        },
+        {
+            "route" : "/home",
+	        "serve" : "/index.html",
+            "statusCode" : 200
+        },
+        {
+            "route" : "/environment",
+	        "serve" : "/index.html",
+            "statusCode" : 200
+        }
+    ]
+}
+    
