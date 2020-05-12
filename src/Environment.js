@@ -21,7 +21,7 @@ class Environment extends React.Component {
         try {
             var respuesta = response.text();
             //console.debug(response);
-            console.debug(respuesta);
+            console.log(respuesta);
             return respuesta; //response.text();
            
           } catch (e) {
