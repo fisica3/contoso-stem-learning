@@ -11,27 +11,24 @@ class Stem extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
+  /*  this.setState({
       fetchedData: "",
       loading: false,
       status : "Loading",
-    })
+    }) */
     fetch("/api/GetJamStem")
-      .then(response => {
-        try {
-          var respuesta = response.text();
-          //console.debug(response);
-          console.debug(respuesta);
-          const nonJsonFunction = true;
-          if (nonJsonFunction) {
-            console.log("noJson");
-            var result = respuesta;
-            return JSON.parse(result);
-          } else {
-            console.log("tipoJson");
-            return response.json();
-          }
-        } catch (e) {
+    .then(response => {
+      try {
+        const nonJsonFunction = true;
+        if (nonJsonFunction) {
+          console.log("noJson");
+          var result = response.text();
+          return JSON.parse(result);
+        } else {
+          console.log("TipoJson");
+          return response.json();
+        }
+      } catch (e) {
           console.error(e);
           return {
             results: [
