@@ -11,6 +11,11 @@ class Stem extends React.Component {
   }
 
   componentDidMount() {
+    this.setState({
+      fetchedData: "",
+      loading: false,
+      status : "Loading",
+    })
     fetch("/api/GetJamStem")
       .then(response => {
         try {
@@ -19,9 +24,11 @@ class Stem extends React.Component {
           console.debug(respuesta);
           const nonJsonFunction = true;
           if (nonJsonFunction) {
+            console.log("noJson");
             var result = respuesta;
             return JSON.parse(result);
           } else {
+            console.log("tipoJson");
             return response.json();
           }
         } catch (e) {
