@@ -19,7 +19,7 @@ class Stem extends React.Component {
     fetch("/api/GetJamStem")
     .then(response => {
       try {
-        const nonJsonFunction = true;
+        const nonJsonFunction = false;
         if (nonJsonFunction) {
           console.log("noJson");
           var result = response.text();
