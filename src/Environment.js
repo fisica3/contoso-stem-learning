@@ -19,9 +19,10 @@ class Environment extends React.Component {
     fetch("/api/GetEnvironmentVariable?name=ENV")
       .then(response => {
         try {
-            console.debug(response);
-            console.debug(response.text());
-            return response.text();
+            var respuesta = response.text();
+            //console.debug(response);
+            console.debug(respuesta);
+            return respuesta; //response.text();
            
           } catch (e) {
             console.error(e);

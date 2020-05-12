@@ -14,11 +14,12 @@ class Stem extends React.Component {
     fetch("/api/GetJamStem")
       .then(response => {
         try {
-          console.debug(response);
-          console.debug(response.text());
+          var respuesta = response.text();
+          //console.debug(response);
+          console.debug(respuesta);
           const nonJsonFunction = true;
           if (nonJsonFunction) {
-            var result = response.text();
+            var result = respuesta;
             return JSON.parse(result);
           } else {
             return response.json();
