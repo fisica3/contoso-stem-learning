@@ -15,7 +15,7 @@ class Stem extends React.Component {
       .then(response => {
         try {
           console.debug(response);
-          console.debug(response.text);
+          console.debug(response.text());
           const nonJsonFunction = true;
           if (nonJsonFunction) {
             var result = response.text();
