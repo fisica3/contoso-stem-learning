@@ -17,7 +17,7 @@ module.exports = async function (context, req) {
                 },
                 {
                     "name": "Technology",
-                    "description": "Learn how to turn the wildest inventions into reality.",
+                    "description": "Aprende como convertir las mas alucinantes invenciones en realidad.",
                     "url": "https://en.wikipedia.org/wiki/Technology",
                     "image": "https://dgdemoassets.blob.core.windows.net/demoimages/code.jpg?sp=rl&st=2020-04-28T06:34:10Z&se=2021-04-28T06:34:00Z&sv=2019-10-10&sr=b&sig=ztWCK8NA1qI2%2BnaiVV4NeyCa6x2osumJR6MrBNV%2Bz0Y%3D"
                 },
