@@ -61,6 +61,12 @@
     </div>
   </section>
   <section class="container">
+    <script>
+      (async function() {
+        let { text } = await( await fetch(`/api/MensajeBasico`)).json();
+        document.querySelector('#name').textContent = text;
+      }())
+    </script>
             <div id="root"></div>
   </section>
     <!--
