@@ -62,6 +62,13 @@
   </section>
   <section class="container">
     <div id="root"></div>
+    <p>Proebando mensaje desde API: <b id="name">...</b></p>
+    <script>
+      (async function() {
+        let { text } = await( await fetch(`/api/MensajeBasico`)).json();
+        document.querySelector('#name').textContent = text;
+      }())
+    </script>
 </section>
     <!--
       This HTML file is a template.
