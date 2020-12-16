@@ -68,7 +68,7 @@
   <p>Loading message from the API: <b id="name">...</b></p>
   <script>
     (async function() {
-      let { text } = await( await fetch(`/api/MensajeBasico?name=PeruNetDev`)).json();
+      let { text } = await( await fetch(`/api/MensajeBasico?name=Wizeline`)).json();
       document.querySelector('#name').textContent = text;
     }())
   </script>
