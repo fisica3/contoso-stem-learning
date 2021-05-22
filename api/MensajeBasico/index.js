@@ -3,8 +3,8 @@ module.exports = async function (context, req) {
 
     const name = (req.query.name || (req.body && req.body.name));
     const responseMessage = name
-        ? "Hola, " + name + ". Este trigger HTTP funciona perfectamente para Wizeline."
-        : "Este trigger HTTP funciono perfectamente. Pero con un 'name' en el querystring tendrias una respuesta personalizada (Wizeline).";
+        ? "Hola, " + name + ". Este trigger HTTP funciona perfectamente para Azure Days."
+        : "Este trigger HTTP funciono perfectamente. Pero con un 'name' en el querystring tendrias una respuesta personalizada (Jueves).";
 
     context.res = {
         // status: 200, /* Defaults to 200 */
