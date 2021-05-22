@@ -42,7 +42,7 @@ class Stem extends React.Component {
                 name: "Technology",
                 description: "Go learn how to make the wildest inventions reality",
                 url: "https://en.wikipedia.org/wiki/Technology",
-                image: "https://dgdemoassets.blob.core.windows.net/demoimages/code.jpg?sp=rl&st=2020-04-28T06:34:10Z&se=2021-04-28T06:34:00Z&sv=2019-10-10&sr=b&sig=ztWCK8NA1qI2%2BnaiVV4NeyCa6x2osumJR6MrBNV%2Bz0Y%3D"
+                image: "/images/code-1839406_1920.jpg"
               },
               {
                 name: "Engineering",
