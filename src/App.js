@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes ,Route } from 'react-router-dom';
  
 import Home from './Home';
 import Authenticated from './Authenticated';
@@ -12,12 +12,12 @@ class App extends Component {
     return (      
        <BrowserRouter>
         <div>
-            <Switch>
+            <Routes>
              <Route path="/" component={Stem} exact/>
              <Route path="/authenticated" component={Authenticated}/>
              <Route path="/environment" component={Environment}/>
-             <Route path="/home" component={Home}/>
-           </Switch>
+             <Route path='/' element={<Home/>} />
+            </Routes>
         </div> 
       </BrowserRouter>
     );
